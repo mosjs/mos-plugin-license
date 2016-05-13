@@ -1,6 +1,10 @@
 'use strict'
-module.exports = (mos, md) => Object.assign(mos.scope, require('./lib')(md))
+module.exports = plugin
 
-module.exports.attributes = {
-  pkg: require('./package.json'),
+const renderLicense = require('./lib/render-license')
+
+function plugin (markdown) {
+  return {
+    license: () => renderLicense(markdown),
+  }
 }

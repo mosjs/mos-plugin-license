@@ -48,7 +48,8 @@ You'll get a license section with the license and author specified in the `packa
 <!--@dependencies({ shield: 'flat-square' })-->
 ## <a name="dependencies">Dependencies</a> [![Dependency status for master](https://img.shields.io/david/zkochan/mos-plugin-license/master.svg?style=flat-square)](https://david-dm.org/zkochan/mos-plugin-license/master)
 
-None
+- [file-exists](https://github.com/scottcorgan/file-exists): Check if filepath exists and is a file
+
 <!--/@-->
 
 <!--@devDependencies({ shield: 'flat-square' })-->

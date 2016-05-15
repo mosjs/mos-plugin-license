@@ -1,8 +1,8 @@
-<!--@'# ' + package.name-->
+<!--@'# ' + pkg.name-->
 # mos-plugin-license
 <!--/@-->
 
-<!--@'> ' + package.description-->
+<!--@'> ' + pkg.description-->
 > A mos plugin for generating a license section
 <!--/@-->
 
@@ -13,10 +13,8 @@
 <!--@installation()-->
 ## Installation
 
-This module is installed via npm:
-
 ```sh
-npm install mos-plugin-license --save
+npm install --save mos-plugin-license
 ```
 <!--/@-->
 
@@ -66,6 +64,8 @@ You'll get a license section with the license and author specified in the `packa
 - [istanbul](https://github.com/gotwarlost/istanbul): Yet another JS code coverage tool that computes statement, line, function and branch coverage with module loader hooks to transparently add coverage when running tests. Supports all JS coverage use cases including unit tests, server side functional tests
 - [mocha](https://github.com/mochajs/mocha): simple, flexible, fun test framework
 - [mos](https://github.com/zkochan/mos): A pluggable module that injects content into your markdown files via hidden JavaScript snippets
+- [mos-plugin-ejs](https://github.com/zkochan/mos-plugin-ejs): A mos plugin that executes embedded js in markdown files
+- [mos-processor](https://github.com/zkochan/mos-processor): A markdown processor for mos
 - [semantic-release](https://github.com/semantic-release/semantic-release): automated semver compliant package publishing
 - [validate-commit-msg](https://github.com/kentcdodds/validate-commit-msg): Script to validate a commit message follows the conventional changelog standard
 

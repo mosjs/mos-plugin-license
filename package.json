@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/zkochan/mos-plugin-license"
+    "url": "https://github.com/mosjs/mos-plugin-license"
   },
   "keywords": [
     "mos-plugin",
@@ -33,9 +33,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/zkochan/mos-plugin-license/issues"
+    "url": "https://github.com/mosjs/mos-plugin-license/issues"
   },
-  "homepage": "https://github.com/zkochan/mos-plugin-license#readme",
+  "homepage": "https://github.com/mosjs/mos-plugin-license#readme",
   "dependencies": {
     "file-exists": "^1.0.0",
     "markdownscript": "^1.2.0",

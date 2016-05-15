@@ -38,7 +38,8 @@
   },
   "homepage": "https://github.com/zkochan/mos-plugin-license#readme",
   "dependencies": {
-    "file-exists": "^1.0.0"
+    "file-exists": "^1.0.0",
+    "markdownscript": "^1.2.0"
   },
   "devDependencies": {
     "chai": "^3.4.1",

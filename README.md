@@ -49,6 +49,7 @@ You'll get a license section with the license and author specified in the `packa
 ## <a name="dependencies">Dependencies</a> [![Dependency status for master](https://img.shields.io/david/zkochan/mos-plugin-license/master.svg?style=flat-square)](https://david-dm.org/zkochan/mos-plugin-license/master)
 
 - [file-exists](https://github.com/scottcorgan/file-exists): Check if filepath exists and is a file
+- [markdownscript](https://github.com/zkochan/markdownscript): Creates markdown Abstract Syntax Tree
 
 <!--/@-->
 

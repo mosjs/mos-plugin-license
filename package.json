@@ -52,8 +52,8 @@
     "istanbul": "^0.4.2",
     "mocha": "^2.3.4",
     "mos": "^1.0.0",
-    "mos-plugin-ejs": "^1.0.0",
-    "mos-processor": "^1.1.0",
+    "mos-plugin-ejs": "^1.0.1",
+    "mos-processor": "^1.1.1",
     "semantic-release": "^4.3.5",
     "validate-commit-msg": "^2.6.1"
   },

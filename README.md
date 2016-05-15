@@ -48,6 +48,7 @@ You'll get a license section with the license and author specified in the `packa
 
 - [file-exists](https://github.com/scottcorgan/file-exists): Check if filepath exists and is a file
 - [markdownscript](https://github.com/zkochan/markdownscript): Creates markdown Abstract Syntax Tree
+- [mdast-util-to-string](https://github.com/wooorm/mdast-util-to-string): Utility to get the plain text content of a node
 
 <!--/@-->
 

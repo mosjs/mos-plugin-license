@@ -2,6 +2,7 @@
 const fileExists = require('file-exists')
 const path = require('path')
 const m = require('markdownscript')
+const toString = require('mdast-util-to-string')
 const h2 = m.h2
 const link = m.link
 const paragraph = m.paragraph
@@ -9,6 +10,11 @@ const paragraph = m.paragraph
 module.exports = (mos, markdown) => {
   Object.assign(mos.scope, {
     license: compileLicense,
+  })
+
+  mos.compile.pre((next, ast, opts) => {
+    ast.children = updateLicenseSection(ast.children)
+    return next(ast, opts)
   })
 
   function compileLicense () {
@@ -27,6 +33,28 @@ module.exports = (mos, markdown) => {
           : markdown.pkg.author.name),
       ]),
     ]
+  }
+
+  function updateLicenseSection (children) {
+    if (!children.length) {
+      return []
+    }
+    const child = children.shift()
+    if (child.type === 'heading' && toString(child).match(/^licen[cs]e$/i)) {
+      return compileLicense().concat(removeSection(children))
+    }
+    return [child].concat(updateLicenseSection(children))
+  }
+
+  function removeSection (children) {
+    if (!children.length) {
+      return []
+    }
+    const child = children.shift()
+    if (~['heading', 'markdownScript', 'thematicBreak'].indexOf(child.type)) {
+      return [child].concat(children)
+    }
+    return removeSection(children)
   }
 }
 

@@ -1,13 +1,10 @@
-'use strict'
-const fileExists = require('file-exists')
-const path = require('path')
-const m = require('markdownscript')
-const toString = require('mdast-util-to-string')
-const h2 = m.h2
-const link = m.link
-const paragraph = m.paragraph
+import fileExists from 'file-exists'
+import path from 'path'
+import m from 'markdownscript'
+import toString from 'mdast-util-to-string'
+const {h2, link, paragraph} = m
 
-module.exports = (mos, markdown) => {
+export default function plugin (mos, markdown) {
   Object.assign(mos.scope, {
     license: compileLicense,
   })
@@ -58,6 +55,6 @@ module.exports = (mos, markdown) => {
   }
 }
 
-module.exports.attributes = {
-  pkg: require('./package.json'),
+plugin.attributes = {
+  pkg: require('../package.json'),
 }

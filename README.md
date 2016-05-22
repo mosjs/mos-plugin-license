@@ -46,6 +46,7 @@ You'll get a license section with the license and author specified in the `packa
 <!--@dependencies({ shield: 'flat-square' })-->
 ## <a name="dependencies">Dependencies</a> [![Dependency status for master](https://img.shields.io/david/mosjs/mos-plugin-license/master.svg?style=flat-square)](https://david-dm.org/mosjs/mos-plugin-license/master)
 
+- [babel-runtime](https://github.com/babel/babel/blob/master/packages): babel selfContained runtime
 - [file-exists](https://github.com/scottcorgan/file-exists): Check if filepath exists and is a file
 - [markdownscript](https://github.com/zkochan/markdownscript): Creates markdown Abstract Syntax Tree
 - [mdast-util-to-string](https://github.com/wooorm/mdast-util-to-string): Utility to get the plain text content of a node
@@ -55,6 +56,11 @@ You'll get a license section with the license and author specified in the `packa
 <!--@devDependencies({ shield: 'flat-square' })-->
 ## <a name="dev-dependencies">Dev Dependencies</a> [![devDependency status for master](https://img.shields.io/david/dev/mosjs/mos-plugin-license/master.svg?style=flat-square)](https://david-dm.org/mosjs/mos-plugin-license/master#info=devDependencies)
 
+- [babel-cli](https://github.com/babel/babel/blob/master/packages): Babel command line.
+- [babel-plugin-add-module-exports](https://github.com/59naga/babel-plugin-add-module-exports): Fix babel/babel#2212
+- [babel-plugin-transform-runtime](https://github.com/babel/babel/blob/master/packages): Externalise references to helpers and builtins, automatically polyfilling your code without polluting globals
+- [babel-preset-es2015](https://github.com/babel/babel/blob/master/packages): Babel preset for all es2015 plugins.
+- [babel-register](https://github.com/babel/babel/blob/master/packages): babel require hook
 - [chai](https://github.com/chaijs/chai): BDD/TDD assertion library for node.js and the browser. Test framework agnostic.
 - [cz-conventional-changelog](https://github.com/commitizen/cz-conventional-changelog): Commitizen adapter following the conventional-changelog format.
 - [eslint](https://github.com/eslint/eslint): An AST-based pattern checker for JavaScript.

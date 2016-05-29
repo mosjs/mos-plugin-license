@@ -2,6 +2,7 @@
   "name": "mos-plugin-license",
   "version": "0.0.0-placeholder",
   "description": "A mos plugin for generating a license section",
+  "preferDev": true,
   "files": [
     "src/",
     "dist/"
@@ -41,6 +42,11 @@
     "url": "https://github.com/mosjs/mos-plugin-license/issues"
   },
   "homepage": "https://github.com/mosjs/mos-plugin-license#readme",
+  "mos": {
+    "installation": {
+      "useShortAlias": true
+    }
+  },
   "dependencies": {
     "babel-runtime": "^6.9.0",
     "file-exists": "^1.0.0",

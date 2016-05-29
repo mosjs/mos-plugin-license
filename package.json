@@ -17,6 +17,7 @@
     "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "postcoveralls": "rm -rf ./coverage",
     "md": "mos -x=\"test/**\"",
+    "presemantic-release": "npm i semantic-release@4",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
     "transpile": "babel src --out-dir dist",
     "prepublish": "npm run transpile"
@@ -64,7 +65,6 @@
     "mos": "^1.2.0",
     "mos-plugin-ejs": "^1.1.0",
     "mos-processor": "^1.1.1",
-    "semantic-release": "^4.3.5",
     "validate-commit-msg": "^2.6.1"
   },
   "engines": {

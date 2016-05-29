@@ -9,8 +9,7 @@
   "main": "dist/index.js",
   "jsnext:main": "src/index.js",
   "scripts": {
-    "test-es5": "mocha --compilers js:babel-register && npm run lint",
-    "test": "npm run test-es5 && mos test -x=\"test/**\"",
+    "test": "mocha --compilers js:babel-register && npm run lint && mos test -x=\"test/**\"",
     "lint": "eslint src/**/*.js",
     "commit": "git-cz",
     "coverage": "istanbul cover -x \"**/*.spec.js\" node_modules/mocha/bin/_mocha -- --compilers js:babel-register -R spec",
@@ -62,7 +61,7 @@
     "ghooks": "^1.2.1",
     "istanbul": "^0.4.2",
     "mocha": "^2.3.4",
-    "mos": "^1.0.0",
+    "mos": "^1.2.0",
     "mos-plugin-ejs": "^1.1.0",
     "mos-processor": "^1.1.1",
     "semantic-release": "^4.3.5",

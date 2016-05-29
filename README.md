@@ -1,10 +1,6 @@
-<!--@'# ' + pkg.name-->
 # mos-plugin-license
-<!--/@-->
 
-<!--@'> ' + pkg.description-->
 > A mos plugin for generating a license section
-<!--/@-->
 
 <!--@shields.flatSquare('npm', 'travis', 'coveralls')-->
 [![npm version](https://img.shields.io/npm/v/mos-plugin-license.svg?style=flat-square)](https://www.npmjs.com/package/mos-plugin-license) [![Build Status](https://img.shields.io/travis/mosjs/mos-plugin-license/master.svg?style=flat-square)](https://travis-ci.org/mosjs/mos-plugin-license) [![Coverage Status](https://img.shields.io/coveralls/mosjs/mos-plugin-license/master.svg?style=flat-square)](https://coveralls.io/r/mosjs/mos-plugin-license?branch=master)
@@ -68,6 +64,7 @@ You'll get a license section with the license and author specified in the `packa
 - [mocha](https://github.com/mochajs/mocha): simple, flexible, fun test framework
 - [mos](https://github.com/mosjs/mos): A pluggable module that injects content into your markdown files via hidden JavaScript snippets
 - [mos-plugin-ejs](https://github.com/mosjs/mos-plugin-ejs): A mos plugin that executes embedded js in markdown files
+- [mos-plugin-readme](https://github.com/mosjs/mos-plugin-readme): A mos plugin for generating README
 - [mos-processor](https://github.com/mosjs/mos-processor): A markdown processor for mos
 - [validate-commit-msg](https://github.com/kentcdodds/validate-commit-msg): Script to validate a commit message follows the conventional changelog standard
 

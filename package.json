@@ -43,6 +43,9 @@
   },
   "homepage": "https://github.com/mosjs/mos-plugin-license#readme",
   "mos": {
+    "plugins": [
+      "readme"
+    ],
     "installation": {
       "useShortAlias": true
     }
@@ -70,6 +73,7 @@
     "mocha": "^2.3.4",
     "mos": "^1.2.0",
     "mos-plugin-ejs": "^1.1.0",
+    "mos-plugin-readme": "^1.0.1",
     "mos-processor": "^1.1.1",
     "validate-commit-msg": "^2.6.1"
   },
